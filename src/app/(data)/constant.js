@@ -11,10 +11,6 @@ import image4 from '../../../public/assets/image/portflio/image4.png';
 import image5 from '../../../public/assets/image/portflio/image5.png';
 import image6 from '../../../public/assets/image/portflio/image6.png';
 
-// import seoProcess1 from '../../../public/assets/image/services/seo/seo-process1.png';
-// import seoProcess2 from '../../../public/assets/image/services/seo/seo-process2.png';
-// import seoProcess3 from '../../../public/assets/image/services/seo/seo-process3.png';
-// import seoProcess4 from '../../../public/assets/image/services/seo/seo-process4.png';
 
 const data = {
   faq: [

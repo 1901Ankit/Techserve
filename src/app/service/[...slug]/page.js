@@ -38,12 +38,12 @@ import softwareProcess4 from "../../../../public/assets/image/services/software/
 import softwareProcess5 from "../../../../public/assets/image/services/software/software-process5.png";
 import softwareProcess6 from "../../../../public/assets/image/services/software/software-process6.png";
 
-import blockChainProcess1 from "../../../../public/assets/image/services/blockChain/blockChain-process1.png";
-import blockChainProcess2 from "../../../../public/assets/image/services/blockChain/blockChain-process2.png";
-import blockChainProcess3 from "../../../../public/assets/image/services/blockChain/blockChain-process3.png";
-import blockChainProcess4 from "../../../../public/assets/image/services/blockChain/blockChain-process4.png";
-import blockChainProcess5 from "../../../../public/assets/image/services/blockChain/blockChain-process5.png";
-import blockChainProcess6 from "../../../../public/assets/image/services/blockChain/blockChain-process6.png";
+import blockChainProcess1 from "../../../../public/assets/image/services/blockChain/blockchain-process1.png";
+import blockChainProcess2 from "../../../../public/assets/image/services/blockChain/blockchain-process2.png";
+import blockChainProcess3 from "../../../../public/assets/image/services/blockChain/blockchain-process3.png";
+import blockChainProcess4 from "../../../../public/assets/image/services/blockChain/blockchain-process4.png";
+import blockChainProcess5 from "../../../../public/assets/image/services/blockChain/blockchain-process5.png";
+import blockChainProcess6 from "../../../../public/assets/image/services/blockChain/blockchain-process6.png";
 
 import dataProcess1 from "../../../../public/assets/image/services/dataAnalysis/data-process1.png";
 import dataProcess2 from "../../../../public/assets/image/services/dataAnalysis/data-process2.png";
