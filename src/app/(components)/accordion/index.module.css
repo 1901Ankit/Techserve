@@ -1,0 +1,31 @@
+.accordion_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  color: #08529A;
+  transition: background-color 0.3s ease;
+}
+
+.accordion_header:hover {
+  background-color: rgba(0, 0, 255, 0.1); /* Optional: Adds a hover effect */
+}
+
+.accordion_content {
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  max-height: 0; /* Default is collapsed */
+}
+
+.accordion_content.open {
+  max-height: 1000px; /* Use a sufficiently large value or calculate dynamically */
+}
+
+@media screen and (max-width: 600px) {
+  .accordion_header h6 {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,46 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - production # This will trigger the workflow on push to the production branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js 20.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20.x"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to Server
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SERVER: ${{ secrets.SERVER }}
+          USERNAME: ${{ secrets.USERNAME }}
+          JWT_SECRETE: ${{ secrets.JWT_SECRETE }}
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          REFRESH_TOKEN_SECRET: ${{ secrets.REFRESH_TOKEN_SECRETRS }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          # Clear the existing deployment
+          ssh -o StrictHostKeyChecking=no $USERNAME@$SERVER "rm -rf /var/www/wishgeeksTemplate/*"
+          # Copy the new code
+          scp -r . $USERNAME@$SERVER:/var/www/wishgeeksTemplate
+          # Create .env.local file
+          ssh -o StrictHostKeyChecking=no $USERNAME@$SERVER "printf '%s\n' $ENV_VARS > /var/www/wishgeeksTemplate/.env.local"
+          # Source nvm, navigate to project directory, and start the application
+          ssh -o StrictHostKeyChecking=no $USERNAME@$SERVER 'source ~/.nvm/nvm.sh && cd /var/www/wishgeeksTemplate && npm start'

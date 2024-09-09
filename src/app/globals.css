@@ -1,0 +1,614 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+.page__title {
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  line-height: 1.2;
+  position: relative;
+  z-index: 3;
+  margin-bottom: 50px !important;
+}
+
+.ourr {
+  margin-left: -20px !important;
+}
+
+.prd {
+  padding: 45px 45px;
+  z-index: 999;
+  height: 90%;
+}
+
+.onpatch {
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  display: block;
+  font-family: montserrat, sans-serif !important;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27.2px;
+}
+
+.let {
+  color: #000;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: montserrat, sans-serif;
+}
+
+.pricing .box {
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 25%);
+  /* height: 550px; */
+}
+
+.pricing h3 {
+  font-weight: 400;
+  padding: 20px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #0094d3;
+  margin: 20px -20px 0px -20px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.video-wrapper {
+  height: 100vh;
+  position: relative;
+}
+
+.get-in-touch-box-mobile-container swiper-slide {
+  width: 100% !important;
+  height: 236px !important;
+}
+
+.get-in-touch-box-mobile-container swiper-slide {
+  width: 100% !important;
+  height: 236px !important;
+}
+
+.get-in-touch-box-mobile-container .get-in-touch-box {
+  height: 100%;
+  width: 100%;
+}
+
+/* Technologies tabs styling */
+.technologies-section swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0094d3;
+}
+
+.tabs button {
+  font-weight: bold;
+  font-size: 1.19rem;
+  padding: 20px 20px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background-color: #0094d3;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button:hover {
+  background-color: #027db3;
+}
+
+.tabs button.active {
+  background-color: white;
+  color: #0094d3;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tabs .left-end-btn.active {
+  background-color: white;
+  color: #0094d3;
+  border-top-left-radius: 0;
+}
+
+.tabs .right-end-btn.active {
+  background-color: white;
+  color: #0094d3;
+  border-top-right-radius: 0;
+}
+
+.tabs-section-mobile {
+  display: flex;
+  width: 100%;
+}
+
+.content {
+  padding: 20px 5%;
+}
+
+.exprers {
+  background: -webkit-linear-gradient(#063a60, #406aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fetaues {
+  background: -webkit-linear-gradient(#3f13d4, #1fa8f5);
+}
+
+.wishgekshead {
+  background: -webkit-linear-gradient(#1a1616c4, #1a1616c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wishgekabout {
+  background: -webkit-linear-gradient(#ffff, #ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titick {
+  background: -webkit-linear-gradient(#2396c6, #1f88b4);
+}
+
+.dynamic-numbers {
+  text-shadow: 0 4px 4px #00000033;
+}
+
+.contact-dialog-box::backdrop {
+  background-image: linear-gradient(
+    45deg,
+    magenta,
+    rebeccapurple,
+    dodgerblue,
+    green
+  );
+  opacity: 0.75;
+}
+
+.contact-dialog-box {
+  position: absolute;
+  top: 80px;
+  left: 66%;
+  width: min-content;
+  z-index: 10;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.contact-dialog-box.dialog-open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.contact-dialog-box.dialog-close {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+input:focus-visible {
+  outline: 0;
+}
+
+/* .get-in-touch-box-mobile-container {
+  display: none;
+} */
+
+
+
+.serviceProcessBg {
+  background: url("../../public/assets/image/seo/serviceBgImage.png") center
+    center no-repeat;
+  background-size: contain;
+  /* Adjust this value to make the image smaller or larger */
+  background-position: 40% 40%;
+  background-clip: content-box;
+}
+
+.contact-dialog-box::backdrop {
+  background-image: linear-gradient(
+    45deg,
+    magenta,
+    rebeccapurple,
+    dodgerblue,
+    green
+  );
+  opacity: 0.75;
+}
+
+.contact-dialog-box {
+  position: absolute;
+  top: 40px;
+  left:62%;
+  width: min-content;
+  z-index: 10;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.contact-dialog-box.dialog-open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.contact-dialog-box.dialog-close {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+input:focus-visible {
+  outline: 0;
+}
+
+/* .get-in-touch-box-mobile-container {
+  display: none;
+} */
+
+
+@media screen and (max-width: 800px) {
+  .tabs-section-mobile {
+    flex-direction: column;
+  }
+
+  .technologies-section swiper-slide img {
+    /* object-fit: cover; */
+    width: auto;
+    height: 100px;
+  }
+
+  .contact-dialog-box {
+    top: -190px;
+    left: 0;
+    width: 90%;
+  }
+
+  .get-in-touch-box-mobile-container {
+    display: block;
+  }
+
+  .desktop-contactDialogBox {
+    display: none;
+  }
+}
+
+.mobile-social-icons-container {
+  margin-top: 15px;
+}
+
+.mobile-social-icon {
+  border-radius: 100px;
+  padding: 12px;
+  color: white;
+}
+
+footer {
+  border-top: 1px solid #0000003f;
+  margin-top: 50px;
+}
+
+.footer-list-circle {
+  background-color: black;
+  border-radius: 100px;
+  padding: 3px;
+  margin-right: 8px;
+}
+
+.blurred {
+  filter: blur(4px);
+  transition: filter 0.3s ease;
+}
+
+.blurred .modal-content {
+  filter: none;
+}
+
+/* Our Process CSS */
+.step-process-arrow-parent {
+  overflow: hidden;
+  height: 0;
+  /* Start with height 0 */
+  /* transition: height 1s ease; */
+}
+
+.step-process-arrow-parent img {
+  display: block;
+  /* Ensure the image displays correctly */
+}
+
+
+/* website calculator css  */
+.website-calculator-bg-linier {
+  /* background-image: linear-gradient(to right, #338DFB, #1E5495); */
+}
+
+
+
+
+/* ------------------------------ */
+
+
+/* .dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dashboard-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.dashboard-item {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.dashboard-link:hover {
+  color: #007bff;
+} */
+
+
+
+
+/* Add these styles to your global.css */
+
+/* .main-container {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+.dashboard-container {
+  flex: 1;
+  max-width: 200px; 
+}
+
+.main-content {
+  flex: 3;
+  
+}
+
+.cart-section {
+  flex: 1;
+  max-width: 200px;
+} */
+
+/* Dashboard styles */
+/* .dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dashboard-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.dashboard-item {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.dashboard-link:hover {
+  color: #007bff;
+} */
+
+
+
+
+/* .dashboard-layout {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.main-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px; 
+  position: sticky; 
+  top: 20px; 
+}
+
+.dashboard-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.dashboard-item {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-link {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 8px;
+}
+
+.dashboard-link:hover {
+  color: #007bff;
+} */
+
+
+
+/* Ensures the page container takes full height and uses flexbox for layout */
+
+
+/* Centers the select section both vertically and horizontally */
+
+
+/* Optional: Styling for select section and its contents */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.hide-placeholder-on-mobile {
+  @apply placeholder-transparent;
+}
+@media (min-width: 640px) { /* Tailwind's sm breakpoint */
+  .hide-placeholder-on-mobile {
+      @apply placeholder-gray-500; /* Adjust color as needed */
+  }
+}
+
+
+/* Ensure dropdown menu is hidden by default */
+.dropdown-menu {
+  display: none;
+}
+
+/* Display the dropdown menu when open */
+.relative .dropdown-menu {
+  display: block; /* Show the dropdown when active */
+}
+
+.dropdown-menu {
+  z-index: 10;
+  position: absolute;
+  top: 100%; /* Position below the button */
+  left: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Mobile-specific styles */
+/* @media (max-width: 768px) {
+  .translate-y-full {
+    transform: translateY(100%);
+  }
+
+  .translate-y-0 {
+    transform: translateY(0);
+  }
+
+  .transition-transform {
+    transition: transform 0.3s ease;
+  }
+}
+
+@media (max-width: 768px) {
+  .translate-y-full {
+    transform: translateY(100%);
+  }
+
+  .translate-y-0 {
+    transform: translateY(0);
+  }
+
+  .transition-transform {
+    transition: transform 0.3s ease;
+  }
+
+  .cart-mobile {
+    max-width: 100%; 
+    width: auto;
+    overflow-y: auto; 
+    max-height: calc(100vh - 4rem); 
+  }
+}
+
+@media (min-width: 769px) {
+  .translate-y-full,
+  .translate-y-0 {
+    transform: none; 
+  }
+
+  .transition-transform {
+    transition: none; 
+  }
+
+  .cart-mobile {
+    max-width: none; 
+    overflow-y: visible; 
+  }
+} */
+
+
+/* modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #fff !important;
+  border-radius: 8px;
+  padding: 20px;
+  width: 50% !important;
+  height: fit-content; 
+  overflow: auto; /* Allow scrolling if content is too large */
+  position: relative;
+
+}
